@@ -1,13 +1,18 @@
 # Curve-GCN
 
 This is the official PyTorch reimplementation of Curve-GCN (CVPR 2019). This repository allows you to train new Curve-GCN models. For technical details, please refer to:  
+----------------------- ------------------------------------
 **Fast Interactive Object Annotation with Curve-GCN**  
-[Huan Ling](http:///www.cs.toronto.edu/~linghuan/)\*, [Jun Gao](http://www.cs.toronto.edu/~jungao/)\*, [Amlan Kar](http://www.cs.toronto.edu/~amlan/), [Wenzheng Chen](http://www.cs.toronto.edu/~wenzheng/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/) (\* denotes equal contribution)    
-CVPR 2019  
+[Huan Ling](http:///www.cs.toronto.edu/~linghuan/)\* <sup>1,2</sup>, [Jun Gao](http://www.cs.toronto.edu/~jungao/)\* <sup>1,2</sup>, [Amlan Kar](http://www.cs.toronto.edu/~amlan/)<sup>1,2</sup>, [Wenzheng Chen](http://www.cs.toronto.edu/~wenzheng/)<sup>1,2</sup>, [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)<sup>1,2,3</sup>   
+<sup>1</sup> University of Toronto  <sup>2</sup> Vector Institute <sup>3</sup> NVIDIA  
 **[[Paper]()] [[Video]()][[Demo]()]**  
 
-
 <img src = "docs/model.png" width="56%"/>
+
+*Manually labeling objects by tracing their boundaries isa laborious process. In Polyrnn, the authors proposed Polygon-RNN that produces polygonal annotations in a recurrentmanner using a CNN-RNN architecture, allowing interactivecorrection via humans-in-the-loop. We propose a new frameworkthat alleviates the sequential nature of Polygon-RNN,by predicting all vertices simultaneously using a Graph ConvolutionalNetwork (GCN). Our model is trained end-to-end,and runs in real time. It supports object annotation by eitherpolygons or splines, facilitating labeling efficiency for bothline-based and curved objects. We show that Curve-GCN outperformsall existing approaches in automatic mode, includingthe powerful PSP-DeepLab and is significantlymore efficient in interactive mode than Polygon-RNN++.Our model runs at 29.3ms in automatic, and 2.6ms in interactivemode, making it 10x and 100x faster than Polygon-RNN++.*  
+(\* denotes equal contribution)    
+----------------------- ------------------------------------
+
 
 
 # Where is the code?

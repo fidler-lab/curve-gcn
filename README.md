@@ -10,6 +10,19 @@ CVPR 2019
 <img src = "docs/model.png" width="56%"/>
 
 
+# Where is the code?
+To get the code, please [signup](http://www.cs.toronto.edu/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
+
+If you use this code, please cite:
+
+    @inproceedings{CurveGCN2019,
+    title={Fast Interactive Object Annotation with Curve-GCN},
+    author={Huan Ling and Jun Gao and Amlan Kar and Wenzheng Chen and Sanja Fidler},
+    booktitle={CVPR},
+    year={2019}
+    }
+
+
 
 # Environment Setup
 All the code has been run and tested on Ubuntu 16.04, Python 2.7.12, Pytorch 0.4.1, CUDA 9.0, TITAN X/Xp and GTX 1080Ti GPUs

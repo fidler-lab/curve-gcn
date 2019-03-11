@@ -11,7 +11,23 @@ This is the official PyTorch reimplementation of Curve-GCN (CVPR 2019). This rep
 
 <img src = "docs/model.png" width="56%"/>
 
-*Manually labeling objects by tracing their boundaries isa laborious process. In Polyrnn, the authors proposed Polygon-RNN that produces polygonal annotations in a recurrentmanner using a CNN-RNN architecture, allowing interactivecorrection via humans-in-the-loop. We propose a new frameworkthat alleviates the sequential nature of Polygon-RNN,by predicting all vertices simultaneously using a Graph ConvolutionalNetwork (GCN). Our model is trained end-to-end,and runs in real time. It supports object annotation by eitherpolygons or splines, facilitating labeling efficiency for bothline-based and curved objects. We show that Curve-GCN outperformsall existing approaches in automatic mode, includingthe powerful PSP-DeepLab and is significantlymore efficient in interactive mode than Polygon-RNN++.Our model runs at 29.3ms in automatic, and 2.6ms in interactivemode, making it 10x and 100x faster than Polygon-RNN++.*  
+*Manually labeling objects by tracing their boundaries is
+a laborious process. In Polyrnn, the authors proposed Polygon-
+RNN that produces polygonal annotations in a recurrent
+manner using a CNN-RNN architecture, allowing interactive
+correction via humans-in-the-loop. We propose a new framework
+that alleviates the sequential nature of Polygon-RNN,
+by predicting all vertices simultaneously using a Graph Convolutional
+Network (GCN). Our model is trained end-to-end,
+and runs in real time. It supports object annotation by either
+polygons or splines, facilitating labeling efficiency for both
+line-based and curved objects. We show that Curve-GCN outperforms
+all existing approaches in automatic mode, including
+the powerful PSP-DeepLab and is significantly
+more efficient in interactive mode than Polygon-RNN++.
+Our model runs at 29.3ms in automatic, and 2.6ms in interactive
+mode, making it 10x and 100x faster than Polygon-
+RNN++.*  
 (\* denotes equal contribution)    
 ----------------------- ------------------------------------
 
@@ -32,7 +48,7 @@ If you use this code, please cite:
 
 # License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+This work is licensed under a *GNU GENERAL PUBLIC LICENSE Version 3* License.
 
 
 # Environment Setup

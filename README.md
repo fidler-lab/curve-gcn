@@ -5,7 +5,7 @@ This is the official PyTorch reimplementation of Curve-GCN (CVPR 2019). This rep
 **Fast Interactive Object Annotation with Curve-GCN**  
 [Huan Ling](http:///www.cs.toronto.edu/~linghuan/)\* <sup>1,2</sup>, [Jun Gao](http://www.cs.toronto.edu/~jungao/)\* <sup>1,2</sup>, [Amlan Kar](http://www.cs.toronto.edu/~amlan/)<sup>1,2</sup>, [Wenzheng Chen](http://www.cs.toronto.edu/~wenzheng/)<sup>1,2</sup>, [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)<sup>1,2,3</sup>   
 <sup>1</sup> University of Toronto  <sup>2</sup> Vector Institute <sup>3</sup> NVIDIA  
-**[[Paper](https://arxiv.org/pdf/1903.06874.pdf)] [[Video](https://www.youtube.com/watch?v=evGqMnL4P3E)] [[Project Page]()] [[Demo]()] [[Supplementary](http://www.cs.toronto.edu/~linghuan/notes/supplementary_curvegcn.pdf)]**
+**[[Paper](https://arxiv.org/pdf/1903.06874.pdf)] [[Video Coming Soon]()] [[Demo Coming Soon]()] [[Supplementary](http://www.cs.toronto.edu/~linghuan/notes/supplementary_curvegcn.pdf)]**
 
 **CVPR 2019**
 

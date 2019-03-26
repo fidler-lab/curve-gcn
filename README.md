@@ -91,7 +91,7 @@ python Scripts/data/change_paths.py --city_dir <path_to_downloaded_leftImg8bit_f
 python Scripts/train/train_gnn_active_spline.py --exp Experiments/gnn-active-spline.json
 ```
 
-Checkpoint to reproduce numby in paper is available at "checkpoints/Spline_GCN_epoch8_step21000.pth"
+Checkpoint to reproduce numbers from the paper is available at "checkpoints/Spline_GCN_epoch8_step21000.pth"
 
 
 ### Finetune Spline GCN with Differentiable Rendering
@@ -102,7 +102,7 @@ Checkpoint to reproduce numby in paper is available at "checkpoints/Spline_GCN_e
 python Scripts/train/train_gnn_active_spline_diffrender.py --exp Experiments/gnn-active-spline-diff-render.json
 ```
 
-Checkpoint to reproduce numby in paper is available at "checkpoints/Spline_GCN_diffrender_epoch6_step18000.pth"
+Checkpoint to reproduce numbers from the paper is available at "checkpoints/Spline_GCN_diffrender_epoch6_step18000.pth"
 
 
 ## Prediction

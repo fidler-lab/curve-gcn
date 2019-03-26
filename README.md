@@ -34,7 +34,7 @@ RNN++.*
 
 
 # Where is the code?
-To get the code, please [signup](http://www.cs.toronto.edu/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
+To get the code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
 
 If you use this code, please cite:
 
@@ -94,7 +94,7 @@ python Scripts/train/train_gnn_active_spline.py --exp Experiments/gnn-active-spl
 Checkpoint to reproduce numby in paper is available at [website](https://drive.google.com/open?id=1kzXSgsbbOTLOoYG3MOtwiD4thPnrH0b5)
 
 
-### Finetune Spline GCN by Diffrender
+### Finetune Spline GCN with Differentiable Rendering
 - Modify "exp\_dir", "encoder\_reload", "data\_dir" attributes at Experiments/gnn-active-spline.json
 - Modify "xe\_initializer" to be the best checkpoint from the last step. Or download from [website](https://drive.google.com/open?id=1kzXSgsbbOTLOoYG3MOtwiD4thPnrH0b5).
 - Run script:

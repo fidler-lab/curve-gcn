@@ -1,6 +1,6 @@
 # Curve-GCN
 
-This is the official PyTorch reimplementation of Curve-GCN (CVPR 2019). This repository allows you to train new Curve-GCN models. For technical details, please refer to:  
+This is the official PyTorch implementation of Curve-GCN (CVPR 2019). This repository allows you to train new Curve-GCN models. For technical details, please refer to:  
 ----------------------- ------------------------------------
 **Fast Interactive Object Annotation with Curve-GCN**  
 [Huan Ling](http:///www.cs.toronto.edu/~linghuan/)\* <sup>1,2</sup>, [Jun Gao](http://www.cs.toronto.edu/~jungao/)\* <sup>1,2</sup>, [Amlan Kar](http://www.cs.toronto.edu/~amlan/)<sup>1,2</sup>, [Wenzheng Chen](http://www.cs.toronto.edu/~wenzheng/)<sup>1,2</sup>, [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)<sup>1,2,3</sup>   

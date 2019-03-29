@@ -96,7 +96,7 @@ Checkpoint to reproduce numbers from the paper is available at "checkpoints/Spli
 
 ### Finetune Spline GCN with Differentiable Rendering
 - Modify "exp\_dir", "encoder\_reload", "data\_dir" attributes at Experiments/gnn-active-spline.json
-- Modify "xe\_initializer" to be the best checkpoint from the last step. Or download from [website](https://drive.google.com/open?id=1kzXSgsbbOTLOoYG3MOtwiD4thPnrH0b5).
+- Modify "xe\_initializer" to be the best checkpoint from the last step. 
 - Run script:
 ```
 python Scripts/train/train_gnn_active_spline_diffrender.py --exp Experiments/gnn-active-spline-diff-render.json

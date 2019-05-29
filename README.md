@@ -108,7 +108,7 @@ Checkpoint to reproduce numbers from the paper is available at "checkpoints/Spli
 ## Prediction
 Generate prediction masks:  
 ```
-python Scripts/train/train_gnn_active_spline_diffrender.py --exp <path to exp file> --output_dir <path to output dir> --reload <path to checkpoint> 
+python Scripts/prediction/generate_annotation_from_active_spline.py --exp <path to exp file> --output_dir <path to output dir> --reload <path to checkpoint> 
 ```
 
 Calculate IOU:  

@@ -1,7 +1,7 @@
 # Curve-GCN
 
-This is the official PyTorch implementation of Curve-GCN (CVPR 2019). This repository allows you to train new Curve-GCN models. For technical details, please refer to:  
------------------------ ------------------------------------
+This is the official PyTorch implementation of Curve-GCN (CVPR 2019). This repository provides the dataloader (Cityscapes-Hard) we used in our paper. For comparisons, we also provide the Cityscapes-Stretch, which is compatiable with [DEXTR](https://github.com/scaelles/DEXTR-PyTorch) and [DELSE](https://github.com/fidler-lab/delse). For technical details, please refer to:  
+------------------------------------------------------------
 **Fast Interactive Object Annotation with Curve-GCN**  
 [Huan Ling](http:///www.cs.toronto.edu/~linghuan/)\* <sup>1,2</sup>, [Jun Gao](http://www.cs.toronto.edu/~jungao/)\* <sup>1,2</sup>, [Amlan Kar](http://www.cs.toronto.edu/~amlan/)<sup>1,2</sup>, [Wenzheng Chen](http://www.cs.toronto.edu/~wenzheng/)<sup>1,2</sup>, [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)<sup>1,2,3</sup>   
 <sup>1</sup> University of Toronto  <sup>2</sup> Vector Institute <sup>3</sup> NVIDIA  
@@ -34,7 +34,7 @@ RNN++.*
 
 
 # Where is the code?
-To get the code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
+To get the full code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
 
 If you use this code, please cite:
 

@@ -34,7 +34,7 @@ RNN++.*
 
 
 # Where is the code?
-To get the code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
+To get the code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. We also provide the [dataloader](https://github.com/fidler-lab/curve-gcn/tree/dataloader). We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
 
 If you use this code, please cite:
 

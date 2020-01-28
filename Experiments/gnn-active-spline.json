@@ -1,0 +1,48 @@
+{
+    "dataset": {
+        "train" : {
+            "data_dir": "",
+            "batch_size":  16,
+            "num_workers": 8,
+            "min_poly_len": 3,
+            "min_area": 100,
+            "sub_th": 0,
+            "img_side": 224,
+            "skip_multicomponent": false,
+            "get_point_annotation":false,
+            "random_context": [0.1, 0.2],
+            "class_filter": [
+                "car",
+                "truck",
+                "train",
+                "bus",
+                "motorcycle",
+                "bicycle",
+                "rider",
+                "person"
+            ]
+        },
+        "train_val" : {
+            "data_dir": "",
+            "batch_size": 16,
+            "num_workers": 8,
+            "min_poly_len": 3,
+            "min_area": 100,
+            "sub_th": 0,
+            "img_side": 224,
+            "skip_multicomponent": false,
+            "get_point_annotation":false,
+            "random_context": [0.15,0.15],
+            "class_filter": [
+                "car",
+                "truck",
+                "train",
+                "bus",
+                "motorcycle",
+                "bicycle",
+                "rider",
+                "person"
+            ]
+        }
+    }
+}

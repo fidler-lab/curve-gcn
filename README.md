@@ -1,6 +1,6 @@
 # Curve-GCN
 
-This is the official PyTorch implementation of Curve-GCN (CVPR 2019). This repository provides the dataloader (Cityscapes-Hard) we used in our paper. For comparisons, we also provide the Cityscapes-Stretch, which is compatiable with [DEXTR](https://github.com/scaelles/DEXTR-PyTorch) and [DELSE](https://github.com/fidler-lab/delse). For technical details, please refer to:  
+This is the official PyTorch implementation of Curve-GCN (CVPR 2019). This repository provides the dataloader ([Cityscapes-Hard](https://github.com/fidler-lab/curve-gcn/tree/dataloader#code-structure)) we used in our paper. For comparisons, we also provide the Cityscapes-Stretch, which is compatiable with [DEXTR](https://github.com/scaelles/DEXTR-PyTorch) and [DELSE](https://github.com/fidler-lab/delse). For technical details, please refer to:  
 ----------------------- ------------------------------------
 **Fast Interactive Object Annotation with Curve-GCN**  
 [Huan Ling](http:///www.cs.toronto.edu/~linghuan/)\* <sup>1,2</sup>, [Jun Gao](http://www.cs.toronto.edu/~jungao/)\* <sup>1,2</sup>, [Amlan Kar](http://www.cs.toronto.edu/~amlan/)<sup>1,2</sup>, [Wenzheng Chen](http://www.cs.toronto.edu/~wenzheng/)<sup>1,2</sup>, [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)<sup>1,2,3</sup>   
@@ -34,9 +34,7 @@ RNN++.*
 
 
 # Where is the code?
-To get the full code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. We will be using GitHub to keep track of issues with the code and to update on availability of newer versions (also available on website and through e-mail to signed up users).
-
-If you use this code, please cite:
+To get the full code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. If you use this code, please cite:
 
     @inproceedings{CurveGCN2019,
     title={Fast Interactive Object Annotation with Curve-GCN},
@@ -44,6 +42,18 @@ If you use this code, please cite:
     booktitle={CVPR},
     year={2019}
     }
+    @inproceedings{AcunaCVPR18,
+	title={Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++},
+	author={David Acuna and Huan Ling and Amlan Kar and Sanja Fidler},
+	booktitle={CVPR},
+	year={2018}
+	}
+	@inproceedings{CastrejonCVPR17,
+	title = {Annotating Object Instances with a Polygon-RNN},
+	author = {Lluis Castrejon and Kaustav Kundu and Raquel Urtasun and Sanja Fidler},
+	booktitle = {CVPR},
+	year = {2017}
+	}
 
 
 # License
@@ -71,67 +81,24 @@ This work is licensed under a *GNU GENERAL PUBLIC LICENSE Version 3* License.
 │   └── stretch_loader.py # Instantiate Cityscapes Stretch Dataloader
 ```
 
-# Environment Setup
-All the code has been run and tested on Ubuntu 16.04, Python 2.7.12, Pytorch 0.4.1, CUDA 9.0, TITAN X/Xp and GTX 1080Ti GPUs
-
-- Go into the downloaded code directory
-```
-cd <path_to_downloaded_directory>
-```
-- Setup python environment
-```
-virtualenv env
-source env/bin/activate
-pip install -r requirements.txt
-```
-- Add the project to PYTHONPATH  
-```
-export PYTHONPATH=$PWD
-```
 
 ## Data 
 
 ### Cityscapes
-- Download the Cityscapes dataset (leftImg8bit\_trainvaltest.zip) from the official [website](https://www.cityscapes-dataset.com/downloads/) [11 GB]
-- Our processed annotation files are included in the download file you get after signing up
-- From the root directory, run the following command with appropriate paths to get the annotation files ready for your machine
+- Our dataloaders work with our processed annotation files which can be downloaded from [here](http://www.cs.toronto.edu/~amlan/data/polygon/cityscapes.tar.gz).
+- We also refer to the original Cityscapes dataset (leftImg8bit\_trainvaltest.zip) from the official [website](https://www.cityscapes-dataset.com/downloads/) [11 GB].
+- From the root directory, run the following command with appropriate paths to get the annotation files ready for your machine:
 ```
 python Scripts/data/change_paths.py --city_dir <path_to_downloaded_leftImg8bit_folder> --json_dir <path_to_downloaded_annotation_file> --out_dir <output_dir>
 ```
 
-## Training
-
-- Download the pre-trained Pytorch Resnet-50 from [here](https://download.pytorch.org/models/resnet50-19c8e357.pth)
-
-### Train Spline GCN
-
-- Modify "exp\_dir", "encoder\_reload", "data\_dir" attributes at Experiments/gnn-active-spline.json
-- Run script:
-```
-python Scripts/train/train_gnn_active_spline.py --exp Experiments/gnn-active-spline.json
-```
-
-Checkpoint to reproduce numbers from the paper is available at "checkpoints/Spline_GCN_epoch8_step21000.pth"
-
-
-### Finetune Spline GCN with Differentiable Rendering
-- Modify "exp\_dir", "encoder\_reload", "data\_dir" attributes at Experiments/gnn-active-spline.json
-- Modify "xe\_initializer" to be the best checkpoint from the last step. 
-- Run script:
-```
-python Scripts/train/train_gnn_active_spline_diffrender.py --exp Experiments/gnn-active-spline-diff-render.json
-```
-
-Checkpoint to reproduce numbers from the paper is available at "checkpoints/Spline_GCN_diffrender_epoch6_step18000.pth"
-
-
-## Prediction
-Generate prediction masks:  
-```
-python Scripts/prediction/generate_annotation_from_active_spline.py --exp <path to exp file> --output_dir <path to output dir> --reload <path to checkpoint> 
-```
-
-Calculate IOU:  
+## Evaluation
+Calculate mIOU:  
 ```
 python Scripts/get_scores.py --pred <path to output dir> --output  <path to output txt file>
+```
+
+Calculate F scores:  
+```
+python Scripts/get_score_boundary_F.py --pred <path to output dir> --output  <path to output txt file>
 ```

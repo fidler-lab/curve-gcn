@@ -34,7 +34,7 @@ RNN++.*
 
 
 # Where is the code?
-To get the full code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. If you use this code, please cite:
+To get the full code, please [signup](http://www.cs.toronto.edu/annotation/curvegcn/code_signup/) here. If you use this code, please consider citing:
 
     @inproceedings{CurveGCN2019,
     title={Fast Interactive Object Annotation with Curve-GCN},

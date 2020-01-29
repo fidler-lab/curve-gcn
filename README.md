@@ -50,6 +50,26 @@ If you use this code, please cite:
 
 This work is licensed under a *GNU GENERAL PUBLIC LICENSE Version 3* License.
 
+# Code Structure
+```
+.
+├── Dataloaders
+│   ├── cityscapes_processed_hard.py # Cityscapes Hard Dataloader
+│   ├── cityscapes_processed_stretch.py # Cityscapes Stretch Dataloader
+│   ├── custom_transforms.py # Customs transform functions for dataloader
+│   └── helper.py   # Helper functions for dataloader
+├── Evaluation
+│   └── metrics.py # Metrics for evaluation
+├── Experiments
+│   └── gnn-active-spline.json  # Experiment json files for Cityscapes Hard Dataloader
+├── Scripts
+│   ├── data
+│   │   └── change_paths.py   # Change the data path to the desired format.
+│   ├── get_score_boundary_F.py # Scripts to get boundary F scores.
+│   ├── get_scores.py  # Scripts to get mIOU scores.
+│   ├── hard_loader.py # Instantiate Cityscapes Hard Dataloader
+│   └── stretch_loader.py # Instantiate Cityscapes Stretch Dataloader
+```
 
 # Environment Setup
 All the code has been run and tested on Ubuntu 16.04, Python 2.7.12, Pytorch 0.4.1, CUDA 9.0, TITAN X/Xp and GTX 1080Ti GPUs
